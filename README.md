@@ -1,4 +1,4 @@
-Docker for using ROS 2 and Gazebo on MacBook with ARM architecture 
+Docker for using ROS 2 foxy and Gazebo on MacBook with ARM architecture 
 
 Based on: https://github.com/fcwu/docker-ubuntu-vnc-desktop 
 
