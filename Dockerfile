@@ -30,6 +30,4 @@ RUN bash -c "source /opt/ros/foxy/setup.bash" && \
 
 RUN bash -c "source ~/.bashrc" 
 
-
-
-
+COPY ./bashrc /root/.bashrc
