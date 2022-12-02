@@ -10,4 +10,4 @@ Based on: https://github.com/fcwu/docker-ubuntu-vnc-desktop
 6) colcon build --symlink-install 
 7) source ~/.bashrc
 8) cd ../ROS2swarm
-9) bash ROS2swarm/start_simulation.sh
+9) bash start_simulation.sh
