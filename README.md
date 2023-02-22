@@ -1,4 +1,4 @@
-Docker for using ROS 2 foxy and Gazebo on MacBook with ARM architecture 
+Docker for using ROS 2 foxy and Gazebo on MacBooks with ARM architecture 
 
 Based on: https://github.com/fcwu/docker-ubuntu-vnc-desktop 
 
@@ -11,3 +11,5 @@ Based on: https://github.com/fcwu/docker-ubuntu-vnc-desktop
 7) source ~/.bashrc
 8) cd ../ROS2swarm
 9) bash start_simulation.sh
+
+The Docker already installs all packages for simulating the TurtleBot3 and the Thymio II robots. 

@@ -50,8 +50,9 @@ RUN cd /home/colcon_ws && \
     git clone https://github.com/jeguzzi/ros-aseba.git -b ros2 --recurse-submodules src/ros-aseba && \
     bash -c "source /opt/ros/foxy/setup.bash && colcon build --symlink-install" 
 
-RUN bash -c "source /opt/ros/foxy/setup.bash" && \ 
-    git clone https://github.com/jeguzzi/ros-thymio.git --branch master --recurse-submodules src/ros-thymio && \
+RUN cd /home/colcon_ws && \ 
+    bash -c "source /opt/ros/foxy/setup.bash" && \ 
+    git clone https://github.com/ROS2swarm/thymio_description.git src/thymio_description && \
     bash -c "source /opt/ros/foxy/setup.bash && colcon build --symlink-install" 
 
 COPY ./bashrc /root/.bashrc
