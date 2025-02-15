@@ -24,7 +24,10 @@ RUN apt-get update && RTI_NC_LICENSE_ACCEPTED=yes apt-get install -y \
 	ros-foxy-xacro \
 	ros-foxy-tf-transformations \ 
 	ros-foxy-robot-state-publisher \ 
-	nano 
+	nano \
+	python3-pip
+
+RUN pip3 install transforms3d  
 
 RUN bash -c "source /opt/ros/foxy/setup.bash" && \ 
     mkdir -p colcon_ws/src && \
